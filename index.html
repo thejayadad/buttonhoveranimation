@@ -13,20 +13,18 @@
             height: 100vh;
             flex-direction: column;
         }
-
-        .btn {
+        .btn{
             position: relative;
             font-size: 20px;
             margin: 0 50px;
             padding: 16px 50px;
-            color: #fff;
+            color: white;
             background: transparent;
             border: none;
             cursor: pointer;
             border-radius: 20px;
         }
-
-        .btn::before {
+        .btn::before{
             content: "";
             position: absolute;
             width: 100%;
@@ -37,14 +35,12 @@
             transition: all .4s ease-in-out;
             z-index: -1;
             border-radius: 20px;
-
         }
         .btn:hover{
-            animation: spin 0.70s infinite;
+            animation: spinning 0.70s infinite;
             animation-iteration-count: 1;
-            
         }
-        @keyframes spin {
+        @keyframes spinning {
             0% {
                 transform: rotate(0deg);
             }
@@ -52,11 +48,11 @@
                 transform: rotate(360deg);
             }
         }
+
       
     </style>
 </head>
 <body>
-    
-        <button class="btn">Spin</button>
+    <div class="btn">Spinning</div>
 </body>
 </html>
